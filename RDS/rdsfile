@@ -17,16 +17,16 @@ CREATE TABLE Persons (
 
 Type show tables;
 Insert Data into table like below:
-INSERT INTO Customers (FirstName, LastName, Address, City)
+INSERT INTO Persons (FirstName, LastName, Address, City)
 VALUES ('Ravi', 'Kumar', 'Kukatpally', 'Hyderabad');
 
-INSERT INTO Customers (FirstName, LastName, Address, City)
+INSERT INTO Persons (FirstName, LastName, Address, City)
 VALUES ('Bhavishya', 'Kumari', 'Housing Board', 'Hyderabad');
 
-INSERT INTO Customers (FirstName, LastName, Address, City)
+INSERT INTO Persons (FirstName, LastName, Address, City)
 VALUES ('Shashank', 'Kumar', 'KPHB', 'Hyderabad');
 
-INSERT INTO Customers (FirstName, LastName, Address, City)
+INSERT INTO Persons (FirstName, LastName, Address, City)
 VALUES ('Meghana', 'Kumari', 'Miyapur', 'Hyderabad');
 
 
