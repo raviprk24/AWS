@@ -1,19 +1,47 @@
-CREATE DATABASE BookDB;
+Now create a database like below:
+CREATE DATABASE swhizzDB;
+Type show databases; 
+Type use swhizzDB
 
 
-
-CREATE TABLE IF NOT EXISTS books (
-    book_id INT AUTO_INCREMENT,
-	title VARCHAR(255) NOT NULL,
-	author VARCHAR(255),
-	publish_date DATE,
-	description TEXT,
-	PRIMARY KEY (book_id)
-)  ENGINE=INNODB;
-
-INSERT INTO books(title,author) VALUE ('Learn AWS RDS' ,'Ravi Kumar');
-
-INSERT INTO books(title,author) VALUE ('MySQL Tips and Tricks' ,'Shashank');
+Now create a table like below:
+CREATE TABLE Persons (
+    PersonID int AUTO_INCREMENT,
+    FirstName varchar(255),
+    LastName varchar(255),
+    Address varchar(255),
+    City varchar(255),
+    PRIMARY KEY (PersonID)
+);
 
 
-INSERT INTO books(title,author) VALUE ('MySQL best practices' ,'ammulu');
+Type show tables;
+Insert Data into table like below:
+INSERT INTO Customers (FirstName, LastName, Address, City)
+VALUES ('Ravi', 'Kumar', 'Kukatpally', 'Hyderabad');
+
+INSERT INTO Customers (FirstName, LastName, Address, City)
+VALUES ('Bhavishya', 'Kumari', 'Housing Board', 'Hyderabad');
+
+INSERT INTO Customers (FirstName, LastName, Address, City)
+VALUES ('Shashank', 'Kumar', 'KPHB', 'Hyderabad');
+
+INSERT INTO Customers (FirstName, LastName, Address, City)
+VALUES ('Meghana', 'Kumari', 'Miyapur', 'Hyderabad');
+
+
+Read Data from table like below:
+SELECT * FROM Persons;
+
+Update data into table like below:
+SET SQL_SAFE_UPDATES = 0;
+UPDATE Persons SET FirstName = 'Alfred Schmidt' WHERE PersonID = 1;
+
+Read Data from table like below:
+SELECT * FROM Persons;
+
+Delete table like below:
+DELETE from Persons;
+
+Delete Database like below:
+DROP DATABASE swhizzDB;
