@@ -40,8 +40,11 @@ UPDATE Persons SET FirstName = 'Alfred Schmidt' WHERE PersonID = 1;
 Read Data from table like below:
 SELECT * FROM Persons;
 
-Delete table like below:
+Delete data in table like below:
 DELETE from Persons;
+
+Delete table like below:
+DROP TABLE Persons;
 
 Delete Database like below:
 DROP DATABASE swhizzDB;
